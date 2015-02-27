@@ -1,0 +1,23 @@
+html
+	head
+		include _head
+		style
+			| html {
+			| 	background-color: white;
+			| }
+			| body {
+			| 	display: none;
+			| 	background-color: white;
+			| }
+	body
+		#main
+			include ui/_site-loader
+			include ui/_main-menu
+			include ui/_header
+			include ui/_footer
+			#pages
+				include pages/_home
+				include pages/_about
+				.cover
+
+		script(src="../index.js")

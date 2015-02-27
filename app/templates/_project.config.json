@@ -1,0 +1,14 @@
+{
+    "languages": [<% for(var i=0;i<languages.length;i++) { %> "<%= languages[i] %>"<%if(i<languages.length-1) {%>,<%}%><% } %> ],
+    "livereloadport": 35729,
+    "domains": [
+        <% for(var i=0;i<domains.length;i++) { %>
+            {
+            "title": "<%=domains[i].title%>",
+            "type" : "<%=domains[i].type%>",
+            "tasks": [<%=domains[i].tasks%>],
+            "port": <%=domains[i].port%>
+            }<%if(i<domains.length-1) { %>,<% } %>
+        <% } %>
+    ]
+}
