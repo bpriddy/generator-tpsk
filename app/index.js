@@ -63,6 +63,7 @@ module.exports = yeoman.generators.Base.extend({
 			}
 			this.directory("gulp-tasks", "gulp-tasks");
 			this.directory("custom_node_modules", "custom_node_modules");
+			this.directory("shared", "src/shared");
 
 			this.fs.copy(
 				this.templatePath('gulpfile.js'),
