@@ -10,5 +10,15 @@
             "port": <%=domains[i].port%>
             }<%if(i<domains.length-1) { %>,<% } %>
         <% } %>
-    ]
+    ],
+    "task_hash": {
+        "styles": "sass",
+        "scripts": "browserify",
+        "statics": "jade-static",
+        "templates": "jade-dynamic",
+        "data": "data",
+        "copy": "copy",
+        "fileserver": "express-static",
+        "service": "express-service"
+    }
 }

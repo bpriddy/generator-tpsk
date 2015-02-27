@@ -123,31 +123,6 @@ function notifyLiveReload(event) {
 }
 
 
-/*************************************************
- START SERVERS
- *************************************************/
-
-gulp.task('servers', ["scripts"], function(cb) {
-	// settings["static-renders"].forEach(function(role, i) {
-	// 	startStaticServer(role, i);
-	// });
-	// startApiServer();
-	// cb();
-});
-
-gulp.task("restart-api-server", ["copy-api"], function(cb) {
-	// var task = this;
-	// gutil.log("Restarting".yellow + " API Server");
-	// apiServer.on("close", function() {
-	// 	gutil.log("Closed".yellow + " API Server");
-	// 	startApiServer(function() {
-	// 		gutil.log("Restarted".green + " API Server");
-	// 		cb();
-	// 	});
-	// }).close();
-	// return this;
-});
-
 
 gulp.task('default', watchDomainTasks, function() {
 	// place code for your default task here
