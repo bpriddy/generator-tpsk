@@ -7,11 +7,11 @@ Generator-TPSK
 
 
 ```bash
-npm install -g yo
+sudo npm install -g yo
 ```
 
 ```bash
-npm install -g generator-tpsk
+sudo npm install -g generator-tpsk
 ```
 
 
