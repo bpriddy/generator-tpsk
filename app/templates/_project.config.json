@@ -11,6 +11,9 @@
             }<%if(i<domains.length-1) { %>,<% } %>
         <% } %>
     ],
+    "workflow": {
+        "reloadjs":true
+    },
     "task_hash": {
         "styles": "sass",
         "scripts": "browserify",
