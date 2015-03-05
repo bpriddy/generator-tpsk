@@ -98,12 +98,12 @@ gulp.task('watch', watchDomainTasks, function() {
 				processes[task].watch(domain.title);
 			}
 		});
-		gulp.watch('./src/' + domain + '/**/*.html',
+		gulp.watch('./dist/' + domain.title + '/**/*.html',
 			notifyLiveReload);
-		gulp.watch('./src/' + domain + '/**/*.css',
+		gulp.watch('./dist/' + domain.title + '/**/*.css',
 			notifyLiveReload);
 		if(project_config.workflow.reloadjs) {
-			gulp.watch('./src/' + domain + '/**/*.js',
+			gulp.watch('./dist/' + domain.title + '/**/*.js',
 				notifyLiveReload);
 		}
 	});
