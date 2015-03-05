@@ -12,12 +12,12 @@ var gutil      = require('gulp-util');
 		var role = "api";
 		var apiApp = express();
 		var apiServer = require('http').createServer(apiApp);
-		var appPath = "../dist/" + domain.title + "/index.js";
+		var appPath = "../dist/" + domain.title + "/scripts/index.js";
 		var Module = require('module');
 		gutil.log("Starting API Server");
 		delete require.cache[Module._resolveFilename(appPath, module)];
 		require(appPath)(apiApp, apiServer);
-		return apiServer.listen(settings[role].port, "0.0.0.0", cb);
+		return apiServer.listen(domain.port, "0.0.0.0", cb);
  	}
  	this.watch = function(domain_title) { }
  }
