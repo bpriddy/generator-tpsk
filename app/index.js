@@ -15,7 +15,7 @@ module.exports = yeoman.generators.Base.extend({
             "tasks": '"copy", "data", "statics", "templates", "scripts", "styles", "fileserver"'
 		},
 		service: {
-             "tasks": '"copy", "data", "statics", "templates", "scripts", "styles", "service"'
+             "tasks": '"copy", "data", "statics", "templates", "copy-js", "styles", "service"'
 		},
 		admin: {
              "tasks": '"copy", "data", "statics", "templates", "scripts", "styles", "fileserver"'
@@ -68,6 +68,11 @@ module.exports = yeoman.generators.Base.extend({
 			this.fs.copy(
 				this.templatePath('gulpfile.js'),
 				this.destinationPath('gulpfile.js')
+			);
+
+			this.fs.copy(
+				this.templatePath('_gitignore'),
+				this.destinationPath('_gitignore')
 			);
 
 			this.fs.copy(
