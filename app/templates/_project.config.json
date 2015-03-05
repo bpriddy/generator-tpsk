@@ -17,7 +17,7 @@
     "task_hash": {
         "styles": "sass",
         "scripts": "browserify",
-        "copy-js": "copy-js",
+        "copy-scripts": "copy-js",
         "statics": "jade-static",
         "templates": "jade-dynamic",
         "data": "data",

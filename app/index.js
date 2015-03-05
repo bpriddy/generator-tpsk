@@ -15,7 +15,7 @@ module.exports = yeoman.generators.Base.extend({
             "tasks": '"copy", "data", "statics", "templates", "scripts", "styles", "fileserver"'
 		},
 		service: {
-             "tasks": '"copy", "data", "statics", "templates", "copy-js", "styles", "service"'
+             "tasks": '"copy", "data", "statics", "templates", "copy-scripts", "styles", "service"'
 		},
 		admin: {
              "tasks": '"copy", "data", "statics", "templates", "scripts", "styles", "fileserver"'
